@@ -4,16 +4,18 @@ import android.os.Bundle;
 import android.support.annotation.Nullable;
 
 import com.wh.ot.base.BaseActivity;
+import com.wh.ot.surfaceView.TriangleGLSurfaceView;
 
 public class GLTestActivity extends BaseActivity {
 
-    private MyGLSurfaceView mGLSurfaceView;
+
+    private TriangleGLSurfaceView mTriangleGLSurfaceView;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        mGLSurfaceView = new MyGLSurfaceView(this);
-        setContentView(mGLSurfaceView);
+        mTriangleGLSurfaceView = new TriangleGLSurfaceView(this);
+        setContentView(mTriangleGLSurfaceView);
     }
 }
